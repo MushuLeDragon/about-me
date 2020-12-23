@@ -6,4 +6,4 @@ Here a description of me and links to my Repositories
 
 ### Host your packages
 
-- **PHP** [Tuto Packagist](https://github.com/Mushu-Tutorials/tuto-packagist "Packagist") ([Official website](https://packagist.org/ "Packagist"))
+- [Tuto Packagist](https://github.com/Mushu-Tutorials/tuto-packagist "Packagist") to host your **PHP** packages. ([Official website](https://packagist.org/ "Packagist"))
