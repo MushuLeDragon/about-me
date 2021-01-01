@@ -1,8 +1,8 @@
-[submodule "tuto-packagist"]
-	path = tuto-packagist
-	url = https://github.com/Mushu-Tutorials/tuto-packagist
-	branch = master
 [submodule "tuto-npmjs-packages"]
-	path = tuto-npmjs-packages
+	path = tuto-host-package/tuto-npmjs-packages
 	url = https://github.com/Mushu-Tutorials/tuto-npmjs-packages
+	branch = main
+[submodule "tuto-git"]
+	path = tuto-git
+	url = https://github.com/Mushu-Tutorials/tuto-git
 	branch = main
