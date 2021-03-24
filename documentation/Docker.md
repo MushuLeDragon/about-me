@@ -10,23 +10,17 @@
 
 ## Database
 
-MySql dump and restore database ([source](https://gist.github.com/spalladino/6d981f7b33f6e0afe6bb)):
+MySql query / import file / dump / restore ([source](https://gist.github.com/spalladino/6d981f7b33f6e0afe6bb)):
 
 ```shell
 # Backup
 docker exec CONTAINER /usr/bin/mysqldump -uroot -ptoor DATABASE > backup.sql
 # Restore
 cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -uroot -proot DATABASE
-```
 
-Import a SQL file into the database:
-
-```shell
+# Import a SQL file
 docker exec -i CONTAINER mysql -u USER -pPASSWORD DATABASE < path/to/sql/file.sql
-```
 
-Execute a query from outside a container:
-
-```shell
+# Query from outside the container
 docker exec -it CONTAINER mysql -u USER -pPASSWORD DATABASE -e "show columns from user;"
 ```
