@@ -19,8 +19,8 @@ docker exec CONTAINER /usr/bin/mysqldump -uroot -ptoor DATABASE > backup.sql
 cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -uroot -proot DATABASE
 
 # Import a SQL file
-docker exec -i CONTAINER mysql -u USER -pPASSWORD DATABASE < path/to/sql/file.sql
+docker exec -i CONTAINER mysql -uroot -proot DATABASE < path/to/sql/file.sql
 
 # Query from outside the container
-docker exec -it CONTAINER mysql -u USER -pPASSWORD DATABASE -e "show columns from user;"
+docker exec -it CONTAINER mysql -uroot -proot DATABASE -e "show columns from user;"
 ```
