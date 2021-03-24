@@ -19,7 +19,7 @@ docker exec CONTAINER /usr/bin/mysqldump -uroot -ptoor DATABASE > backup.sql
 cat backup.sql | docker exec -i CONTAINER /usr/bin/mysql -uroot -proot DATABASE
 ```
 
-Import a SQL file in the database:
+Import a SQL file into the database:
 
 ```shell
 docker exec -i CONTAINER mysql -u USER -pPASSWORD DATABASE < path/to/sql/file.sql
