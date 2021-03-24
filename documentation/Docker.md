@@ -24,3 +24,9 @@ Import a SQL file into the database:
 ```shell
 docker exec -i CONTAINER mysql -u USER -pPASSWORD DATABASE < path/to/sql/file.sql
 ```
+
+Execute a query from outside a container:
+
+```shell
+docker exec -it CONTAINER mysql -u USER -pPASSWORD DATABASE -e "show columns from user;"
+```
